@@ -1,0 +1,24 @@
+{
+  "development": {
+    "username": "goodhomes",
+    "password": "gitsr4h4514",
+    "database": "goodhomes",
+    "host": "localhost",
+    "dialect": "mysql"
+  },
+  "production": {
+    "username": "root",
+    "password": null,
+    "database": "database_production",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  },
+  "localhost": {
+    "username": "root",
+    "password": "reza2421",
+    "database": "scramble_game",
+    "host": "localhost",
+    "dialect": "mysql",
+    "port": "3306"
+  }
+}
