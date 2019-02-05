@@ -33,11 +33,11 @@ npm install
 
 setup config,
 rename file /app/config/config_example.json menjadi config.json
-lalu setup host database di dalam file tersebut, contohnya seperti berikut (default running di localhost)
+lalu setup host database di dalam file tersebut, contohnya seperti berikut (default running digit localhost)
 ```
 "localhost": {
-    "username": "root",
-    "password": "reza2421",
+    "username": "-",
+    "password": "-",
     "database": "scramble_game",
     "host": "localhost",
     "dialect": "mysql",
