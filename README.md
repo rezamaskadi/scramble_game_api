@@ -33,7 +33,7 @@ npm install
 
 setup config,
 rename file /app/config/config_example.json menjadi config.json
-lalu setup host database di dalam file tersebut, contohnya seperti berikut (default running digit localhost)
+lalu setup host database di dalam file tersebut, contohnya seperti berikut (default running di config localhost)
 ```
 "localhost": {
     "username": "-",
