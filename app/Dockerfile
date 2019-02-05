@@ -8,4 +8,4 @@ RUN npm install
 COPY . .
 
 EXPOSE 9021
-CMD [ "npm", "start" ]
+CMD [ "node", "index.js" ]
