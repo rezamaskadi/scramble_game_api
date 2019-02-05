@@ -35,5 +35,13 @@ module.exports =
             "AuthController.authUser",
             "WordController.useHint"
         ]
+    },
+    {
+        method: "get",
+        endpoint: "word/history/list",
+        controllers: [
+            "AuthController.auth",
+            "WordController.historyList"
+        ]
     }
 ];

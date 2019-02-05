@@ -5,7 +5,15 @@
 module.exports = function(args)
 {
 	var WordModel 		= args.models.WordModel;
+	let UserAnswerModel = args.models.UserAnswerModel;
+	let UserModel 		= args.models.UserModel;
 	var logger 			= args.LOGGER;
+
+	WordModel.hasMany(UserAnswerModel, {foreignKey: 'word_id'});
+	UserAnswerModel.belongsTo(WordModel, {foreignKey: 'word_id'});
+
+	UserModel.hasMany(UserAnswerModel, {foreignKey: 'user_id'});
+	UserAnswerModel.belongsTo(UserModel, {foreignKey: 'user_id'});
 
 	var WordWorker = {
 
@@ -56,6 +64,27 @@ module.exports = function(args)
                     id
                 }
             }).then(function(result) {
+				cb(null, result);
+			}, function(reason) {
+				logger.error(reason.message);
+				cb({code : 500, message : reason.message});
+			});
+		},
+		
+		historyList : function(cb)
+        {
+			UserAnswerModel.findAll({
+				include: [
+					{
+						model: UserModel,
+						attributes: ['username', 'email']
+					},
+					{
+						model: WordModel,
+						attributes: ['word']
+					}
+				]
+			}).then(function(result) {
 				cb(null, result);
 			}, function(reason) {
 				logger.error(reason.message);

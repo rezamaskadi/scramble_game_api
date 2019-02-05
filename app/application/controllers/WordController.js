@@ -49,7 +49,8 @@ module.exports = function(args)
                             let data = {
                                 user_id: previousData.id,
                                 word_id: id,
-                                status: 'wrong'
+                                status: 'wrong',
+                                answer: answerLowerCase
                             }
                             UserAnswerWorker.newData(data, function(err, success){
                                 if(err){
@@ -69,7 +70,8 @@ module.exports = function(args)
                             let data = {
                                 user_id: previousData.id,
                                 word_id: id,
-                                status: 'correct'
+                                status: 'correct',
+                                answer: answerLowerCase
                             }
                             UserAnswerWorker.newData(data, function(err, success){
                                 if(err){
@@ -113,6 +115,17 @@ module.exports = function(args)
                     }
                 })
             }
+        },
+
+        historyList : function(previousData, req, res, next)
+        {
+			WordWorker.historyList(function(err, success) {
+				if (err) {
+					next(err);
+				} else {
+					next(null, success);
+				}
+			});
         },
 	};
 

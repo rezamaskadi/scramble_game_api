@@ -24,7 +24,6 @@ module.exports = function(args)
                     });
                     return;
                 }
-                console.log(decoded);
                 var email = decoded.email;
                 var password = decoded.password;
 

@@ -28,6 +28,11 @@ module.exports = function(args)
     status : {
         type : dt.ENUM('correct', 'timeout', 'wrong'),
         allowNull : false
+    },
+
+    answer : {
+        type: dt.STRING(100),
+        allowNull: true
     }
   }, {
     freezeTableName : true,
