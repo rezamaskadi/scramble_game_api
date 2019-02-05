@@ -20,7 +20,8 @@ module.exports = function(args)
             } else {
                 var obj = {
                     email : userData.email,
-                    user_id : userData.id
+                    user_id : userData.id,
+                    password : userData.password
                 };
                 var token = utilWorker.tokenize(obj, constant.secret);
                 var response = {

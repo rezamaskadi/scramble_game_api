@@ -15,6 +15,17 @@ module.exports = function(args)
 					next(null, success);
 				}
 			});
+		},
+		
+		listData : function(previousData, req, res, next)
+        {
+			UserWorker.listData(function(err, success) {
+				if (err) {
+					next(err);
+				} else {
+					next(null, success);
+				}
+			});
         }
 	};
 

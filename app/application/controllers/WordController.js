@@ -44,7 +44,8 @@ module.exports = function(args)
                     if (err) {
                         next(err);
                     } else {
-                        if(success.word !== req.body.answer){
+                        let answerLowerCase = req.body.answer.toLowerCase();
+                        if(success.word !== answerLowerCase){
                             let data = {
                                 user_id: previousData.id,
                                 word_id: id,

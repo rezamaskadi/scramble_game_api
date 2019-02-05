@@ -24,8 +24,7 @@ module.exports = function(args)
                     });
                     return;
                 }
-
-                var usertoken = decoded;
+                console.log(decoded);
                 var email = decoded.email;
                 var password = decoded.password;
 

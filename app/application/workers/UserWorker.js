@@ -44,6 +44,16 @@ module.exports = function(args)
                 logger.error(reason.message);
 				cb({code : 500, message : reason.message});
             })
+        },
+
+		listData : function(cb)
+        {
+			UserModel.findAll().then(function(result) {
+				cb(null, result);
+			}, function(reason) {
+				logger.error(reason.message);
+				cb({code : 500, message : reason.message});
+			});
         }
 	};
 

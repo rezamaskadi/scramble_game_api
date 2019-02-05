@@ -22,7 +22,7 @@ module.exports = function(args)
         getOne : function(id, cb)
         {
 			WordModel.findOne({
-                attributes: ['scramble_word'],
+                attributes: ['scramble_word', 'hint'],
                 where : {
                     id
                 }
@@ -51,7 +51,7 @@ module.exports = function(args)
         getOneHint : function(id, cb)
         {
 			WordModel.findOne({
-                attributes: ['hint'],
+                attributes: ['hint_2'],
                 where : {
                     id
                 }

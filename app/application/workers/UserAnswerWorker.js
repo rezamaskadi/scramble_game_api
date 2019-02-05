@@ -17,7 +17,7 @@ module.exports = function(args)
 				logger.error(reason.message);
 				cb({code : 500, message : reason.message});
 			});
-        }
+		}
 	};
 
 	return UserAnswerWorker;

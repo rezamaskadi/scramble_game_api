@@ -25,8 +25,13 @@ module.exports = function(args)
         type : dt.STRING(100),
         allowNull : false
     },
-
+    
     hint : {
+        type : dt.STRING(100),
+        allowNull : false
+    },
+
+    hint_2 : {
         type : dt.STRING(100),
         allowNull : false
     }
