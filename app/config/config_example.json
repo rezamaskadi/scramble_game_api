@@ -1,8 +1,8 @@
 {
   "development": {
-    "username": "goodhomes",
-    "password": "gitsr4h4514",
-    "database": "goodhomes",
+    "username": "-",
+    "password": "-",
+    "database": "-",
     "host": "localhost",
     "dialect": "mysql"
   },

@@ -1,0 +1,302 @@
+{
+	"info": {
+		"_postman_id": "bd4ee8a7-e22b-4cb2-8acf-cc8054b5fbc4",
+		"name": "scramble_game",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Register Admin",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "usertoken",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InJlemFtYXNrYWRpQGdtYWlsLmNvbSIsInVzZXJfaWQiOjEsInBhc3N3b3JkIjoiZDYzMmFmMTFhZGIxMDQ1NGNhMzU0NmViZjA3NDhlYjYwMzRiM2ZkZjYxNmE0ODk5MmIwMDE4ZmFkMWQ4MjNjZWE5YjQzNGY2ZTEyZDM4OGEyMTM5MDU3MmRmM2NlOTQzNzhkYTZmYzY0YzI3ZmRiNWJkODMyZjJmODU0NmJmNDYzODk1MDk3OTJjMDZkZGQ2OWQ3ZjhhNzE5NmNiODVhZGNiZjAyZjA1M2E1NTY5MDIyMWFlNjAzODgyNDQ0NWZiZGRkMjNjMzVhMTBmMDM0NjJmNzYyNGZjOGI1NDFmMTViMDk3ZTQyODYwMzkyNDExYjI2ZDQ1ODVlYzJjNWEyNzFiZTYzMzI3OTFiNjVjOTY1Y2Q0YTJkZWM3N2FjMmQzNmFmZWRiNjhkNjhkMzNlNzdiNWRlMzI3MjEyYmZmNzU4YzRmNDQ0ODJmYTczZmQ5YjY0NzE2NmJiMjVkNzQ4MmY5MWYyNGJjMWE4OWNiMzA0YWJkOGU0NjY4OWM4NGNkM2I3YTZhOGViMDI0ODQxMjJkNWZiMTNmMTExNTM3ZWM1NGU3YWJlNTAwOWRhZDg4OTg3ZmNiNGMzYTc2MjJiMDJjYzkxNmUxMWRkODZmN2ZlZTVkMDAxYzkyMjI4Mjc0MGYyZDk1MDdmZTZjMDIwNWFlZTc5MTkxZWFkNWViMzRmM2IwODI0ZmJhYmVjMjY3YmViZmJhZjliMmJmYWIzYjAzYjZkY2YzMDMwNWIwOGUzNTkwYWFhNDkzNzRhYTE2M2Y5MjI3MWRkMTc3ZjIyMzM3MGZjNjhlYmI1NDAxNzg1NDBmNjg2YjRjNmY3YTE1OWE5YTNlMjkyNzY1MTE0ZmJiZTdhN2VhNmVmYmMyNjJmZTJjMjk2OGMwNjdkZTU0NTc1ZjE3MzVjNmY1ODJmNzJlMzg3NDQ2NjE1N2E3ZTU1YjdjMjQwNGYzM2QwZWE5YWM4YTEzMTQxMGI4NDllM2FjMTdkMzllM2UwMzY1NDcwYThjZjgyMzU0YjU2M2JjY2JhZWZmZTAzOTRjOGM1MjI3NGNlYmYzYzQ3YTQ0ZjRkMTM4Mzc1YTVjYTVhZDQ2YjAwN2NlY2QwZmNiNGNjNzAyNWM1NzAwNDQzZWU5ZmVjMWFmYzRjNThlYTAzYzllMWFlMTAyODczMmMxNWI1YjU1MjVjZWRiOThhOTZhNWM2MmIwNjcwOTM2MWQ2OTE2NTBkZTM1OGJjYzNhZDlmM2UwNmQ0ZDFkMmE2YTZlYWU5Y2I1MGQyNjgwNTMzYThlOTM1NjlhMWU2NjlmMjQ3ZjY2ZDlkYTg1YjkxNDM4NzdlOTQ3NTc2MTI1Zjg1YjI1ZmE1OWQ2MDMxMDExN2UzOSIsImlhdCI6MTU0OTM1MzA0M30.GfdRpw9J0d-iRpyY_b7-sfFxQ_KzXz3EVsSoq9KWqgA"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"email\": \"admin@gmail.com\",\n\t\"password\": \"4dmin\"\n}"
+				},
+				"url": {
+					"raw": "207.148.79.65:3007/v1/admin/register",
+					"host": [
+						"207",
+						"148",
+						"79",
+						"65"
+					],
+					"port": "3007",
+					"path": [
+						"v1",
+						"admin",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login Admin",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"email\": \"rezamaskadi@gmail.com\",\n\t\"password\": \"reza2421\"\n}"
+				},
+				"url": {
+					"raw": "207.148.79.65:3007/v1/admin/login",
+					"host": [
+						"207",
+						"148",
+						"79",
+						"65"
+					],
+					"port": "3007",
+					"path": [
+						"v1",
+						"admin",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User Register",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"username\": \"reza_test3\",\n\t\"email\": \"rezamaskadi_test_test3@gmail.com\"\n}"
+				},
+				"url": {
+					"raw": "207.148.79.65:3007/v1/user/register",
+					"host": [
+						"207",
+						"148",
+						"79",
+						"65"
+					],
+					"port": "3007",
+					"path": [
+						"v1",
+						"user",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Word Create",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "usertoken",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InJlemFtYXNrYWRpQGdtYWlsLmNvbSIsInBhc3N3b3JkIjoiZDYzMmFmMTFhZGIxMDQ1NGNhMzU0NmViZjA3NDhlYjYwMzRiM2ZkZjYxNmE0ODk5MmIwMDE4ZmFkMWQ4MjNjZWE5YjQzNGY2ZTEyZDM4OGEyMTM5MDU3MmRmM2NlOTQzNzhkYTZmYzY0YzI3ZmRiNWJkODMyZjJmODU0NmJmNDYzODk1MDk3OTJjMDZkZGQ2OWQ3ZjhhNzE5NmNiODVhZGNiZjAyZjA1M2E1NTY5MDIyMWFlNjAzODgyNDQ0NWZiZGRkMjNjMzVhMTBmMDM0NjJmNzYyNGZjOGI1NDFmMTViMDk3ZTQyODYwMzkyNDExYjI2ZDQ1ODVlYzJjNWEyNzFiZTYzMzI3OTFiNjVjOTY1Y2Q0YTJkZWM3N2FjMmQzNmFmZWRiNjhkNjhkMzNlNzdiNWRlMzI3MjEyYmZmNzU4YzRmNDQ0ODJmYTczZmQ5YjY0NzE2NmJiMjVkNzQ4MmY5MWYyNGJjMWE4OWNiMzA0YWJkOGU0NjY4OWM4NGNkM2I3YTZhOGViMDI0ODQxMjJkNWZiMTNmMTExNTM3ZWM1NGU3YWJlNTAwOWRhZDg4OTg3ZmNiNGMzYTc2MjJiMDJjYzkxNmUxMWRkODZmN2ZlZTVkMDAxYzkyMjI4Mjc0MGYyZDk1MDdmZTZjMDIwNWFlZTc5MTkxZWFkNWViMzRmM2IwODI0ZmJhYmVjMjY3YmViZmJhZjliMmJmYWIzYjAzYjZkY2YzMDMwNWIwOGUzNTkwYWFhNDkzNzRhYTE2M2Y5MjI3MWRkMTc3ZjIyMzM3MGZjNjhlYmI1NDAxNzg1NDBmNjg2YjRjNmY3YTE1OWE5YTNlMjkyNzY1MTE0ZmJiZTdhN2VhNmVmYmMyNjJmZTJjMjk2OGMwNjdkZTU0NTc1ZjE3MzVjNmY1ODJmNzJlMzg3NDQ2NjE1N2E3ZTU1YjdjMjQwNGYzM2QwZWE5YWM4YTEzMTQxMGI4NDllM2FjMTdkMzllM2UwMzY1NDcwYThjZjgyMzU0YjU2M2JjY2JhZWZmZTAzOTRjOGM1MjI3NGNlYmYzYzQ3YTQ0ZjRkMTM4Mzc1YTVjYTVhZDQ2YjAwN2NlY2QwZmNiNGNjNzAyNWM1NzAwNDQzZWU5ZmVjMWFmYzRjNThlYTAzYzllMWFlMTAyODczMmMxNWI1YjU1MjVjZWRiOThhOTZhNWM2MmIwNjcwOTM2MWQ2OTE2NTBkZTM1OGJjYzNhZDlmM2UwNmQ0ZDFkMmE2YTZlYWU5Y2I1MGQyNjgwNTMzYThlOTM1NjlhMWU2NjlmMjQ3ZjY2ZDlkYTg1YjkxNDM4NzdlOTQ3NTc2MTI1Zjg1YjI1ZmE1OWQ2MDMxMDExN2UzOSIsImlhdCI6MTU0OTE2MDczMn0.PParnr77DTmXF4uENguj_PmE2vdnLT_i_kfhnrjszX4"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"word\": \"jakarta\",\n\t\"hint\": \"Indonesia city\"\n}"
+				},
+				"url": {
+					"raw": "207.148.79.65:3007/v1/word/create",
+					"host": [
+						"207",
+						"148",
+						"79",
+						"65"
+					],
+					"port": "3007",
+					"path": [
+						"v1",
+						"word",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Word Get One",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "usertoken",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InJlemFtYXNrYWRpX3Rlc3RfdGVzdDNAZ21haWwuY29tIiwidXNlcl9pZCI6NiwiaWF0IjoxNTQ5MTcyNzU4fQ.0DgsQoxmK3iRW-nQJ4DTgC5cBVhapZsosDHu3nLapcA"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "207.148.79.65:3007/v1/word/one/3",
+					"host": [
+						"207",
+						"148",
+						"79",
+						"65"
+					],
+					"port": "3007",
+					"path": [
+						"v1",
+						"word",
+						"one",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Word Answer",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "usertoken",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InJlemFtYXNrYWRpX3Rlc3QyQGdtYWlsLmNvbSIsInVzZXJfaWQiOjI2LCJpYXQiOjE1NDkzMzQ5MzB9.wzEAUPaIHJJ4W1j20jxTxiRDOSVZVq42AgXtYPs0gMM"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"answer\": \"lion\"\n}"
+				},
+				"url": {
+					"raw": "207.148.79.65:3007/v1/word/answer/1",
+					"host": [
+						"207",
+						"148",
+						"79",
+						"65"
+					],
+					"port": "3007",
+					"path": [
+						"v1",
+						"word",
+						"answer",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Word Get Hint",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "usertoken",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InJlemFtYXNrYWRpX3Rlc3RfdGVzdDNAZ21haWwuY29tIiwidXNlcl9pZCI6NiwiaWF0IjoxNTQ5MTcyNzU4fQ.0DgsQoxmK3iRW-nQJ4DTgC5cBVhapZsosDHu3nLapcA"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "207.148.79.65:3007/v1/word/hint/1",
+					"host": [
+						"207",
+						"148",
+						"79",
+						"65"
+					],
+					"port": "3007",
+					"path": [
+						"v1",
+						"word",
+						"hint",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User Get List",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "usertoken",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InJlemFtYXNrYWRpQGdtYWlsLmNvbSIsInVzZXJfaWQiOjEsInBhc3N3b3JkIjoiZDYzMmFmMTFhZGIxMDQ1NGNhMzU0NmViZjA3NDhlYjYwMzRiM2ZkZjYxNmE0ODk5MmIwMDE4ZmFkMWQ4MjNjZWE5YjQzNGY2ZTEyZDM4OGEyMTM5MDU3MmRmM2NlOTQzNzhkYTZmYzY0YzI3ZmRiNWJkODMyZjJmODU0NmJmNDYzODk1MDk3OTJjMDZkZGQ2OWQ3ZjhhNzE5NmNiODVhZGNiZjAyZjA1M2E1NTY5MDIyMWFlNjAzODgyNDQ0NWZiZGRkMjNjMzVhMTBmMDM0NjJmNzYyNGZjOGI1NDFmMTViMDk3ZTQyODYwMzkyNDExYjI2ZDQ1ODVlYzJjNWEyNzFiZTYzMzI3OTFiNjVjOTY1Y2Q0YTJkZWM3N2FjMmQzNmFmZWRiNjhkNjhkMzNlNzdiNWRlMzI3MjEyYmZmNzU4YzRmNDQ0ODJmYTczZmQ5YjY0NzE2NmJiMjVkNzQ4MmY5MWYyNGJjMWE4OWNiMzA0YWJkOGU0NjY4OWM4NGNkM2I3YTZhOGViMDI0ODQxMjJkNWZiMTNmMTExNTM3ZWM1NGU3YWJlNTAwOWRhZDg4OTg3ZmNiNGMzYTc2MjJiMDJjYzkxNmUxMWRkODZmN2ZlZTVkMDAxYzkyMjI4Mjc0MGYyZDk1MDdmZTZjMDIwNWFlZTc5MTkxZWFkNWViMzRmM2IwODI0ZmJhYmVjMjY3YmViZmJhZjliMmJmYWIzYjAzYjZkY2YzMDMwNWIwOGUzNTkwYWFhNDkzNzRhYTE2M2Y5MjI3MWRkMTc3ZjIyMzM3MGZjNjhlYmI1NDAxNzg1NDBmNjg2YjRjNmY3YTE1OWE5YTNlMjkyNzY1MTE0ZmJiZTdhN2VhNmVmYmMyNjJmZTJjMjk2OGMwNjdkZTU0NTc1ZjE3MzVjNmY1ODJmNzJlMzg3NDQ2NjE1N2E3ZTU1YjdjMjQwNGYzM2QwZWE5YWM4YTEzMTQxMGI4NDllM2FjMTdkMzllM2UwMzY1NDcwYThjZjgyMzU0YjU2M2JjY2JhZWZmZTAzOTRjOGM1MjI3NGNlYmYzYzQ3YTQ0ZjRkMTM4Mzc1YTVjYTVhZDQ2YjAwN2NlY2QwZmNiNGNjNzAyNWM1NzAwNDQzZWU5ZmVjMWFmYzRjNThlYTAzYzllMWFlMTAyODczMmMxNWI1YjU1MjVjZWRiOThhOTZhNWM2MmIwNjcwOTM2MWQ2OTE2NTBkZTM1OGJjYzNhZDlmM2UwNmQ0ZDFkMmE2YTZlYWU5Y2I1MGQyNjgwNTMzYThlOTM1NjlhMWU2NjlmMjQ3ZjY2ZDlkYTg1YjkxNDM4NzdlOTQ3NTc2MTI1Zjg1YjI1ZmE1OWQ2MDMxMDExN2UzOSIsImlhdCI6MTU0OTM1MzA0M30.GfdRpw9J0d-iRpyY_b7-sfFxQ_KzXz3EVsSoq9KWqgA"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "207.148.79.65:3007/v1/admin/users/list",
+					"host": [
+						"207",
+						"148",
+						"79",
+						"65"
+					],
+					"port": "3007",
+					"path": [
+						"v1",
+						"admin",
+						"users",
+						"list"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Word Get History List",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "usertoken",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InJlemFtYXNrYWRpQGdtYWlsLmNvbSIsInVzZXJfaWQiOjEsInBhc3N3b3JkIjoiZDYzMmFmMTFhZGIxMDQ1NGNhMzU0NmViZjA3NDhlYjYwMzRiM2ZkZjYxNmE0ODk5MmIwMDE4ZmFkMWQ4MjNjZWE5YjQzNGY2ZTEyZDM4OGEyMTM5MDU3MmRmM2NlOTQzNzhkYTZmYzY0YzI3ZmRiNWJkODMyZjJmODU0NmJmNDYzODk1MDk3OTJjMDZkZGQ2OWQ3ZjhhNzE5NmNiODVhZGNiZjAyZjA1M2E1NTY5MDIyMWFlNjAzODgyNDQ0NWZiZGRkMjNjMzVhMTBmMDM0NjJmNzYyNGZjOGI1NDFmMTViMDk3ZTQyODYwMzkyNDExYjI2ZDQ1ODVlYzJjNWEyNzFiZTYzMzI3OTFiNjVjOTY1Y2Q0YTJkZWM3N2FjMmQzNmFmZWRiNjhkNjhkMzNlNzdiNWRlMzI3MjEyYmZmNzU4YzRmNDQ0ODJmYTczZmQ5YjY0NzE2NmJiMjVkNzQ4MmY5MWYyNGJjMWE4OWNiMzA0YWJkOGU0NjY4OWM4NGNkM2I3YTZhOGViMDI0ODQxMjJkNWZiMTNmMTExNTM3ZWM1NGU3YWJlNTAwOWRhZDg4OTg3ZmNiNGMzYTc2MjJiMDJjYzkxNmUxMWRkODZmN2ZlZTVkMDAxYzkyMjI4Mjc0MGYyZDk1MDdmZTZjMDIwNWFlZTc5MTkxZWFkNWViMzRmM2IwODI0ZmJhYmVjMjY3YmViZmJhZjliMmJmYWIzYjAzYjZkY2YzMDMwNWIwOGUzNTkwYWFhNDkzNzRhYTE2M2Y5MjI3MWRkMTc3ZjIyMzM3MGZjNjhlYmI1NDAxNzg1NDBmNjg2YjRjNmY3YTE1OWE5YTNlMjkyNzY1MTE0ZmJiZTdhN2VhNmVmYmMyNjJmZTJjMjk2OGMwNjdkZTU0NTc1ZjE3MzVjNmY1ODJmNzJlMzg3NDQ2NjE1N2E3ZTU1YjdjMjQwNGYzM2QwZWE5YWM4YTEzMTQxMGI4NDllM2FjMTdkMzllM2UwMzY1NDcwYThjZjgyMzU0YjU2M2JjY2JhZWZmZTAzOTRjOGM1MjI3NGNlYmYzYzQ3YTQ0ZjRkMTM4Mzc1YTVjYTVhZDQ2YjAwN2NlY2QwZmNiNGNjNzAyNWM1NzAwNDQzZWU5ZmVjMWFmYzRjNThlYTAzYzllMWFlMTAyODczMmMxNWI1YjU1MjVjZWRiOThhOTZhNWM2MmIwNjcwOTM2MWQ2OTE2NTBkZTM1OGJjYzNhZDlmM2UwNmQ0ZDFkMmE2YTZlYWU5Y2I1MGQyNjgwNTMzYThlOTM1NjlhMWU2NjlmMjQ3ZjY2ZDlkYTg1YjkxNDM4NzdlOTQ3NTc2MTI1Zjg1YjI1ZmE1OWQ2MDMxMDExN2UzOSIsImlhdCI6MTU0OTM1MzA0M30.GfdRpw9J0d-iRpyY_b7-sfFxQ_KzXz3EVsSoq9KWqgA"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "207.148.79.65:3007/v1/word/history/list",
+					"host": [
+						"207",
+						"148",
+						"79",
+						"65"
+					],
+					"port": "3007",
+					"path": [
+						"v1",
+						"word",
+						"history",
+						"list"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
